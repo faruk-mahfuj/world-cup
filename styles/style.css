@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-.watch-button {
+.main-button {
     padding: 16px 25px;
     background: #2A65D7;
     border-radius: 5px;
@@ -90,22 +90,23 @@ hr {
 }
 
 .filled {
+    padding: 17px 0px;
+    width: 252px;
     text-decoration: none;
     border-radius: 10px;
-    padding: 17px;
     color: #FFFFFF;
     background: #2A65D7;
     font-size: 20px;
     font-weight: 600;
     margin: 0px 0px 30px;
     text-align: center;
-    white-space: nowrap;
 }
 
 .empty {
+    padding: 17px 0px;
+    width: 252px;
     text-decoration: none;
     border-radius: 10px;
-    padding: 17px 40px;
     white-space: nowrap;
     color: #161616;
     background: #FFFFFF;
@@ -114,6 +115,10 @@ hr {
     margin: 0px 0px 30px;
     text-align: center;
 }
+
+
+
+
 
 /* Match Cards */
 
@@ -179,6 +184,10 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+}
+
+.view-all {
+    display: none;
 }
 
 .blog {
@@ -331,14 +340,12 @@ hr {
     }
 
     .filled {
-        padding: 9px 18px;
         background: #2A65D7;
         font-weight: 600;
         margin: 0px 0px 16px;
     }
 
     .empty {
-        padding: 9px 18px;
         color: #161616;
         background: #FFFFFF;
         border: 1px solid #E8E8E8;
@@ -346,11 +353,15 @@ hr {
     }
 
     /* Match Cards */
-    .cards {
+    .cards,
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
 
+    .view-all {
+        display: none;
+    }
 
     /* Footer Styles */
 
@@ -437,29 +448,36 @@ hr {
     }
 
     .filled {
-        padding: 17px 28px;
-        margin: 0px;
+        margin: 0px 11px;
 
     }
 
     .empty {
-        padding: 17px 70px;
-        margin: 0px;
+        margin: 0px 11px;
         border: 1px solid #E8E8E8;
     }
 
     /* Match Cards */
-    .cards {
+    .cards,
+    .blogs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
 
-
+    .view-all {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
 
 
 
     /* Footer */
+    .footer {
+        margin-top: 70px;
+    }
+
     .footer div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
