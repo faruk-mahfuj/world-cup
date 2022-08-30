@@ -6,6 +6,7 @@ body {
     padding: 0%;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 button {
@@ -93,7 +94,6 @@ hr {
     border-radius: 10px;
     padding: 17px;
     background: #2A65D7;
-    border-radius: 10px;
     font-size: 20px;
     color: #FFFFFF;
     font-weight: 600;
@@ -107,7 +107,6 @@ hr {
     padding: 17px 40px;
     color: #161616;
     background: #FFFFFF;
-    border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
     margin: 0px 0px 30px;
@@ -202,6 +201,7 @@ hr {
 
 }
 
+
 .footer div p {
     margin-right: 20px;
 
@@ -209,4 +209,222 @@ hr {
 
 .footer div .fa-brands {
     margin-right: 20px;
+}
+
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width:576px) {
+
+    /* Hero-Section Styles */
+    button {
+        padding: 8px 12px;
+        width: 160px;
+        margin-bottom: 20px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .half-width {
+        width: 100%;
+        padding-left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .half-width h1 {
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        margin-bottom: 8px;
+        padding-top: 28px;
+
+    }
+
+    .half-width p {
+        font-size: 14px;
+        margin-bottom: 16px;
+        padding: 0% 30px;
+        text-align: center;
+
+    }
+
+    .extra-text {
+        display: none;
+    }
+
+
+    .half-width img {
+        width: 70%;
+        margin: 0px;
+    }
+
+    /* Upcoming Match Styles */
+    .match-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        align-items: center;
+    }
+
+
+    /* Sidebar */
+    .sidebar {
+        display: flex;
+        background-color: #ffffff;
+        flex-direction: column;
+        width: fit-content;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .filled {
+        padding: 9px 18px;
+        background: #2A65D7;
+        font-weight: 600;
+        margin: 0px 0px 16px;
+    }
+
+    .empty {
+        padding: 9px 18px;
+        color: #161616;
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        margin: 0px 0px 16px;
+    }
+
+    /* Match Cards */
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+
+    /* Footer Styles */
+
+    .footer {
+        margin-top: 24px;
+        padding: 40px;
+    }
+
+    .footer h3 {
+        font-size: 22px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .footer div p {
+        margin-right: 14px;
+        margin-right: 0%;
+
+    }
+
+    #icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer div .fa-brands {
+        margin-right: 0px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:567px) and (max-width:992px) {
+
+    /* Hero-Section Styles */
+    .hero-container {
+        margin: 50px;
+    }
+
+
+    .half-width h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 0%;
+        margin-bottom: 0px;
+    }
+
+    .half-width p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .extra-text {
+        display: none;
+    }
+
+    /* Upcoming Match Styles */
+    .match-container {
+        flex-direction: column;
+        margin: 70px 50px 0px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-between;
+        background: #ffffff;
+        margin: 0px 0px 30px;
+        padding: 0px;
+    }
+
+    .filled {
+        padding: 17px 28px;
+        margin: 0px;
+
+    }
+
+    .empty {
+        padding: 17px 70px;
+        margin: 0px;
+        border: 1px solid #E8E8E8;
+    }
+
+    /* Match Cards */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+
+
+
+    /* Footer */
+    .footer div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-content: center;
+
+
+    }
+
+
+    .footer div p {
+        margin-right: 16px;
+
+    }
+
+
 }
