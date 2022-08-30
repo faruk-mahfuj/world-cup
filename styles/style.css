@@ -4,13 +4,13 @@
 /* Common Style or Utilities */
 body {
     padding: 0%;
-    margin: 0px 140px;
+    margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
 
 button {
     padding: 16px 25px;
-    background: #DD0000;
+    background: #2A65D7;
     border-radius: 5px;
     color: white;
     border: none;
@@ -20,12 +20,19 @@ button {
     width: 187px;
 }
 
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-top: 34px;
+    margin-bottom: 50px;
+}
+
 /* Hero-Section Styles */
 .hero-container {
     display: flex;
     background: #161616;
     border-radius: 30px;
-    margin: 50px 0px 130px;
+    margin: 50px 140px 130px;
     padding: 0;
 }
 
@@ -66,6 +73,7 @@ button {
 /* Upcoming Match Styles */
 .match-container {
     display: flex;
+    margin: 0px 140px;
 }
 
 /* Sidebar */
@@ -83,8 +91,8 @@ button {
 .filled {
     text-decoration: none;
     border-radius: 10px;
-    padding: 17px 38px;
-    background: #DD0000;
+    padding: 17px;
+    background: #2A65D7;
     border-radius: 10px;
     font-size: 20px;
     color: #FFFFFF;
@@ -166,4 +174,39 @@ button {
     color: #4D4D4D;
     margin-top: 10px;
     margin-bottom: 0%;
+}
+
+/* Footer Styles */
+
+.footer {
+    margin-top: 130px;
+    background: #161616;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+.footer h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 84px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.footer div p {
+    margin-right: 20px;
+
+}
+
+.footer div .fa-brands {
+    margin-right: 20px;
 }
