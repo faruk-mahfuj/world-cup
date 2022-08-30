@@ -267,6 +267,15 @@ hr {
     margin-right: 20px;
 }
 
+.icons {
+    text-decoration: none;
+
+}
+
+.fa-brands {
+    color: white;
+}
+
 /* Media Queries */
 /* Mobile Devices */
 @media only screen and (max-width:576px) {
@@ -390,12 +399,15 @@ hr {
 
     }
 
-    #icons {
+
+    .icons {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
+
 
     .footer div .fa-brands {
         margin-right: 0px;
