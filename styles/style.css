@@ -400,7 +400,7 @@ hr {
     }
 
 
-    .icons {
+    .icons div {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -409,7 +409,7 @@ hr {
 
 
 
-    .footer div .fa-brands {
+    .fa-brands {
         margin-right: 0px;
     }
 }
