@@ -4,7 +4,7 @@
 /* Common Style or Utilities */
 body {
     padding: 0%;
-    margin: 0%;
+    margin: 0px 140px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -25,7 +25,7 @@ button {
     display: flex;
     background: #161616;
     border-radius: 30px;
-    margin: 50px 140px;
+    margin: 50px 0px 130px;
     padding: 0;
 }
 
@@ -64,13 +64,20 @@ button {
 }
 
 /* Upcoming Match Styles */
+.match-container {
+    display: flex;
+}
+
+/* Sidebar */
 .sidebar {
     display: flex;
     flex-direction: column;
     width: 312px;
+    height: 312px;
     background: #161616;
     border-radius: 10px;
-    margin: 50px 140px;
+    margin: 0px 24px 50px 0px;
+    padding: 30px 30px 0px;
 }
 
 .filled {
@@ -82,7 +89,7 @@ button {
     font-size: 20px;
     color: #FFFFFF;
     font-weight: 600;
-    margin: 30px;
+    margin: 0px 0px 30px;
     text-align: center;
 }
 
@@ -95,6 +102,68 @@ button {
     border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
-    margin: 0px 30px 30px;
+    margin: 0px 0px 30px;
     text-align: center;
+}
+
+/* Match Cards */
+.cards-container {
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 53px 30px;
+    margin: 0px;
+}
+
+.match-flags {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.match-flags img {
+    width: 40%;
+}
+
+.match-flags p {
+    text-align: center;
+    color: #161616;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px 22px;
+    display: flex;
+    align-items: center;
+}
+
+
+.match-info h3 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #161616;
+    margin-top: 20px;
+    margin-bottom: 0%;
+}
+
+.match-info p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #4D4D4D;
+    margin-top: 10px;
+    margin-bottom: 0%;
 }
