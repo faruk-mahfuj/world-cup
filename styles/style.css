@@ -62,3 +62,39 @@ button {
     align-items: flex-end;
     margin: 33px 80px 0px 24px;
 }
+
+/* Upcoming Match Styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    background: #161616;
+    border-radius: 10px;
+    margin: 50px 140px;
+}
+
+.filled {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 17px 38px;
+    background: #DD0000;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 30px;
+    text-align: center;
+}
+
+.empty {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 17px 40px;
+    color: #161616;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 30px 30px;
+    text-align: center;
+}
