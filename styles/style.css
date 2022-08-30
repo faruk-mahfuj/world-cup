@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-button {
+.watch-button {
     padding: 16px 25px;
     background: #2A65D7;
     border-radius: 5px;
@@ -93,18 +93,20 @@ hr {
     text-decoration: none;
     border-radius: 10px;
     padding: 17px;
+    color: #FFFFFF;
     background: #2A65D7;
     font-size: 20px;
-    color: #FFFFFF;
     font-weight: 600;
     margin: 0px 0px 30px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .empty {
     text-decoration: none;
     border-radius: 10px;
     padding: 17px 40px;
+    white-space: nowrap;
     color: #161616;
     background: #FFFFFF;
     font-size: 20px;
@@ -114,9 +116,6 @@ hr {
 }
 
 /* Match Cards */
-.cards-container {
-    width: 100%;
-}
 
 .cards {
     display: grid;
@@ -175,6 +174,54 @@ hr {
     margin-bottom: 0%;
 }
 
+/* Blog Section Styles */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blog {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-cover img {
+    width: 100%;
+}
+
+.blog-details {
+    padding: 20px;
+}
+
+.blog-details button {
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 4px 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #161616;
+}
+
+.blog-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+    margin: 15px 0px 20px;
+}
+
+.blog-info {
+    color: rgba(22, 22, 22, 0.7);
+
+}
+
+
+
+
 /* Footer Styles */
 
 .footer {
@@ -216,7 +263,7 @@ hr {
 @media only screen and (max-width:576px) {
 
     /* Hero-Section Styles */
-    button {
+    .watch-button {
         padding: 8px 12px;
         width: 160px;
         margin-bottom: 20px;
@@ -407,6 +454,7 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
+
 
 
 
