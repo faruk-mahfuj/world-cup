@@ -69,6 +69,13 @@ hr {
     width: 85%;
     align-items: flex-end;
     margin: 33px 80px 0px 24px;
+    transition: width 0.25s, height 0.25s, transform 0.25s;
+}
+
+
+
+.hero-container:hover img {
+    width: 100%;
 }
 
 /* Upcoming Match Styles */
@@ -325,7 +332,7 @@ hr {
 
     .half-width img {
         width: 70%;
-        margin: 0px;
+        margin: 20px 0px 0px;
     }
 
     /* Upcoming Match Styles */
